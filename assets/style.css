@@ -1,20 +1,42 @@
+*{
+    --textGreen: #2b412b;
+    --textSienna: #3c3529;
+
+}
+
 body {
     background-color: #afac6e;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    line-height: 2.25;
+    border-bottom: solid;
+    border-color: black;
 }
 
 .headerName {
-    color: #2b412b;
-
-
+    color: var(--textGreen);
 }
 
 .aboutMe {
-    color:  #3c3529;
+    color: var(--textSienna);
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
 }
 
 #aboutMeText {
-    color: #2b412b;
+    color: var(--textGreen);
+    padding: 10px;
+    border-right: solid;
+    border-color: black;
 }
+
 
 img {
     height: 150px;
@@ -22,17 +44,22 @@ img {
 }
 
 .myProjects {
-    color: #3c3529;
+    color: var(--textSienna);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #myProjectsText {
-    color: #2b412b;
+    color: var(--textGreen);
+    padding: 10px;
+    border-right: solid;
+    border-color: black;
 }
 
 .contactInfo {
-    color: #3c3529;
+    color: var(--textSienna);
 }
 
 #contactMeText {
-    color: #2b412b;
+    color: var(--textGreen);
 }

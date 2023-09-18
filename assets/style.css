@@ -1,7 +1,38 @@
+body {
+    background-color: #afac6e;
+}
+
+.headerName {
+    color: #2b412b;
+
+
+}
+
 .aboutMe {
+    color:  #3c3529;
+}
+
+#aboutMeText {
+    color: #2b412b;
 }
 
 img {
     height: 150px;
     border-radius: 15px;
+}
+
+.myProjects {
+    color: #3c3529;
+}
+
+#myProjectsText {
+    color: #2b412b;
+}
+
+.contactInfo {
+    color: #3c3529;
+}
+
+#contactMeText {
+    color: #2b412b;
 }

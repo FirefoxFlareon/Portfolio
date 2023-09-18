@@ -15,8 +15,9 @@ header {
     display: flex;
     justify-content: space-around;
     line-height: 2.25;
-    border-bottom: solid;
+    border-bottom: double;
     border-color: black;
+    border-width: 10px;
 }
 
 .headerName {
@@ -25,7 +26,7 @@ header {
 
 .aboutMe {
     color: var(--textSienna);
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
     width: 75%;
 }
@@ -33,8 +34,15 @@ header {
 #aboutMeText {
     color: var(--textGreen);
     padding: 10px;
-    border-right: solid;
+    border-right: double;
     border-color: black;
+    border-width: 10px;
+    display: block;
+}
+
+#aboutMeP {
+    margin: 15px;
+    padding: 15px;
 }
 
 
@@ -47,19 +55,58 @@ img {
     color: var(--textSienna);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #myProjectsText {
     color: var(--textGreen);
     padding: 10px;
-    border-right: solid;
+    border-right: double;
     border-color: black;
+    border-width: 10px;
 }
 
-.contactInfo {
-    color: var(--textSienna);
+#project1 {
+    margin: 20px;
+    padding: 15px;
+    border: solid;
+    border-color: rgb(173, 62, 28) ;
+}
+
+#project2 {
+    margin: 20px;
+    padding: 15px;
+    border: solid;
+    border-color: rgb(173, 62, 28) ;
+}
+
+#project3 {
+    margin: 20px;
+    padding: 15px;
+    border: solid;
+    border-color: rgb(173, 62, 28) ;
+}
+
+#project4 {
+    margin: 20px;
+    padding: 15px;
+    border: solid;
+    border-color: rgb(173, 62, 28) ;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #contactMeText {
     color: var(--textGreen);
+    padding: 10px;
+    border-right: double;
+    border-color: black;
+    border-width: 10px;
+}
+
+.contactInfo {
+    color: var(--textSienna);
 }

@@ -1,6 +1,7 @@
 *{
     --textGreen: #2b412b;
     --textSienna: #3c3529;
+    --hoverGreen: #4a6b4a;
 
 }
 
@@ -13,18 +14,52 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     line-height: 2.25;
     border-bottom: double 10px black;
+    padding: 20px 0;
 }
 
 .headerName {
     color: var(--textGreen);
+    text-align: center;
 }
 
 .headerTitle {
     text-align: center;
     color: var(--textGreen);
+    margin: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.nav-list li {
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--textGreen);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--hoverGreen);
 }
 
 .section-container {
@@ -38,12 +73,11 @@ header {
     text-align: left;
     margin: 0;
     padding: 10px;
-    border-right: double 10px black;
 }
 
 .aboutMe {
     color: var(--textSienna);
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     width: 100%;
 }
@@ -52,14 +86,12 @@ header {
     display: flex;
     align-items: center;
     gap: 40px;
+    font-size: larger;
 }
 
 #aboutMeText {
     color: var(--textGreen);
     padding: 10px;
-    border-right: double;
-    border-color: black;
-    border-width: 10px;
     display:flex;
 }
 
@@ -69,13 +101,15 @@ header {
     border-radius: 15px;
     border: 2px solid var(--textGreen);
     margin-top: 30px;
+    margin-right: 50px;
     margin-bottom: 20px;
 }
 
 
 #aboutMeP {
-    margin: 15px;
+    margin: 0px;
     padding: 15px;
+    text-align: left;
 }
 
 .myProjects {
@@ -86,7 +120,7 @@ header {
 
 .project-card {
     background-color: #a58723;
-    border: 1px solid #f88c4e;
+    border: 1px solid var(--textGreen);
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
@@ -119,25 +153,42 @@ header {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .github-link:hover {
-    background-color: #f88c4e;
+    background-color: var(--hoverGreen);
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
 }
 
 #contactMeText {
     color: var(--textGreen);
     padding: 10px;
-    border-right: double;
-    border-color: black;
-    border-width: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 2em;
 }
 
-.contactInfo {
-    color: var(--textSienna);
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--textGreen);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--hoverGreen);
 }

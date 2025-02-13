@@ -6,4 +6,4 @@ A portfolio containing past projects, contact information, resume, and other emp
 
 
 ## Screenshot
-![Alt text](./assets/screenshot1.png)
+![Alt text](./assets/PortfolioSS.png)

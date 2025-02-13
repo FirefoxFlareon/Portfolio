@@ -2,7 +2,7 @@
 
 ## Description
 
-A portfolio to use as a timeline for improvement and to show my skills to potential employers! Will be constantly updated as I improve and complete more challenges!
+A portfolio containing past projects, contact information, resume, and other employment related information.
 
 
 ## Screenshot

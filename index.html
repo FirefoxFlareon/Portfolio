@@ -12,44 +12,53 @@
 <body>
     <header>
         <h1 class="headerName">Tanner Shank</h1>
-        <img src="./assets/Portfolio pic.jpg" alt="A picture of me, a generic white guy">
+        <h2 class="headerTitle">Full-Stack<br>Web Developer</h2>
         <nav>
         <ul>
             <li><a href="#aboutMeText">About Me</a></li>
-            <li><a href="#myProjectsText">My Projects</a></li>
-            <li><a href="#contactHeader">Contact Info</a></li>
+            <li><a href="#project1">My Projects</a></li>
+            <li><a href="#contactMeText">Contact Info</a></li>
         </ul>
         </nav>
     </header>
     <section class="aboutMe">
-        <h2 id="aboutMeText">About me</h2>
-        <div id="aboutMeP">
-            <p>Heres some info about me! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Blanditiis voluptatum tempora sit eius rem laborum veritatis facere dicta rerum fugiat,
-            illo doloribus esse expedita soluta corporis aliquid nam fugit quibusdam? Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Sunt, dignissimos. Asperiores, officia
-            quidem perspiciatis laborum magnam dignissimos, quis iusto culpa modi, non maxime
-             dolorum quisquam unde facere ex voluptatibus nesciunt.</p>
-             </div>
+        <div class="section-container">
+            <h2 id="aboutMeText" class="section-title">About Me</h2>
+        </div>
+        <div id="aboutMeContent">
+            <img src="./assets/Portfolio pic.jpg" class="aboutMeImage">
+            <p>I am a Web Developer certified from the University of Minnesota Bootcamp Program with a focus on full stack development. <br>
+                I have over a decade of experience in customer service, that has taught me how to work well with a team and how to communicate effectively.<br>
+                I pride myself on my adaptability and my ability to learn on the fly! When I'm not coding, I enjoy playing video games, running, cooking and learning Japanese.</p>
+        </div>
     </section>
     <section class="myProjects">
-        <h2 id="myProjectsText">My Projects</h2>
-        <article id="project1">
-            <h3>Project One</h3>
-            <p>Project details</p>
-        </article>
-        <article id="project2">
-            <h3>Project Two</h3>
-            <p>Project details</p>
-        </article>
-        <article id="project3">
-            <h3>Project Three</h3>
-            <p>Project details</p>
-        </article>
-        <article id="project4">
-            <h3>Project Four</h3>
-            <p>Project details</p>
-        </article>
+        <div class="section-container">
+        </div>
+        <div class="project-card" id="project1">
+            <img src="https://raw.githubusercontent.com/FirefoxFlareon/React-Portfolio/refs/heads/main/src/assets/Silver-Screenr.png">
+            <h3>Silver Screenr</h3>
+            <p>Search for movies, rate, and comment on them</p>
+            <a href="https://github.com/CWOChris/Silver-Screenr" class="github-link">GitHub Repo</a>
+        </div>
+        <div class="project-card" id="project2">
+            <img src="https://raw.githubusercontent.com/FirefoxFlareon/Employee-Tracker/main/assets/Emp-Tracker-Screenshot.png">
+            <h3>Employee Tracker</h3>
+            <p>A command-line application to manage a company's employee database</p>
+            <a href="https://github.com/FirefoxFlareon/Employee-Tracker" class="github-link">GitHub Repo</a>
+        </div>
+        <div class="project-card" id="project3">
+            <img src="https://raw.githubusercontent.com/FirefoxFlareon/Social-Network-API/main/assets/Social%20Network%20API%20Screenshot.png">
+            <h3>Social Network API</h3>
+            <p>An API for a social network that uses a NoSQL database and allows CRUD operations</p>
+            <a href="https://github.com/FirefoxFlareon/Social-Network-API" class="github-link">GitHub Repo</a>
+        </div>
+        <div class="project-card" id="project4">
+            <img src="https://raw.githubusercontent.com/FirefoxFlareon/ORM-Mod13/refs/heads/main/assets/ORM-Screenshot.png">
+            <h3>E-Commerce Backend</h3>
+            <p>Perform CRUD requests on a MySQL database using Sequelize</p>
+            <a href="https://github.com/FirefoxFlareon/ORM-Mod13/tree/main" class="github-link">GitHub Repo</a>
+        </div>
     </section>
     <footer>
         <h4 id="contactMeText">Contact Me</h4>

@@ -15,20 +15,43 @@ header {
     display: flex;
     justify-content: space-around;
     line-height: 2.25;
-    border-bottom: double;
-    border-color: black;
-    border-width: 10px;
+    border-bottom: double 10px black;
 }
 
 .headerName {
     color: var(--textGreen);
 }
 
+.headerTitle {
+    text-align: center;
+    color: var(--textGreen);
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 2em;
+    color: var(--textGreen);
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    border-right: double 10px black;
+}
+
 .aboutMe {
     color: var(--textSienna);
     display: inline-flex;
     justify-content: space-around;
-    width: 75%;
+    width: 100%;
+}
+
+#aboutMeContent {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 #aboutMeText {
@@ -37,61 +60,69 @@ header {
     border-right: double;
     border-color: black;
     border-width: 10px;
-    display: block;
+    display:flex;
 }
+
+.aboutMeImage {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid var(--textGreen);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 
 #aboutMeP {
     margin: 15px;
     padding: 15px;
 }
 
-
-img {
-    height: 150px;
-    border-radius: 15px;
-}
-
 .myProjects {
-    color: var(--textSienna);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#myProjectsText {
+.project-card {
+    background-color: #a58723;
+    border: 1px solid #f88c4e;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(40% - 20px);
+    box-sizing: border-box;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
     color: var(--textGreen);
-    padding: 10px;
-    border-right: double;
-    border-color: black;
-    border-width: 10px;
 }
 
-#project1 {
-    margin: 20px;
-    padding: 15px;
-    border: solid;
-    border-color: rgb(173, 62, 28) ;
+.project-card p {
+    margin: 10px 0;
+    color: var(--textSienna);
 }
 
-#project2 {
-    margin: 20px;
-    padding: 15px;
-    border: solid;
-    border-color: rgb(173, 62, 28) ;
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: var(--textGreen);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-#project3 {
-    margin: 20px;
-    padding: 15px;
-    border: solid;
-    border-color: rgb(173, 62, 28) ;
-}
-
-#project4 {
-    margin: 20px;
-    padding: 15px;
-    border: solid;
-    border-color: rgb(173, 62, 28) ;
+.github-link:hover {
+    background-color: #f88c4e;
 }
 
 footer {
